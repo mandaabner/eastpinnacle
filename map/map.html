@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>East Pinnacle and the 2099 named pillars of the US</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='map'></div>
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoibWFuZGFhYm5lciIsImEiOiJjamx1MjQ3YWIwZzA4M3NyNjV0bjVla3drIn0.ct9p6mLylnCo83XKJxqudA';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mandaabner/cjluzdbvi2crq2sqlc6dsr3ng',
+            center: [-84.224, 37.558],
+            zoom: 16.0
+        });
+    </script>
+
+</body>
+
+</html>
